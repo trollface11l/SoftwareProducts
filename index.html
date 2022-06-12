@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+  <link rel="stylesheet" href="table.css">
+  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная страница</title>
+
+
+    <table>
+  <caption>Software products</caption>
+  <tr>
+    <th><img src="C:\Users\Asus\SowtwareProducts\SoftwareProducts\free-animated-icon-book-6454239.gif" width: "120px", height= "120px"><p>Составление ТЗ</p></th>
+    <th><img src="C:\Users\Asus\SowtwareProducts\SoftwareProducts\free-animated-icon-hacker-6569144.gif" width: "120px", height= "120px"><p>Десктоп приложение</p></th>
+    <th><img src="C:\Users\Asus\SowtwareProducts\SoftwareProducts\смс.gif" width: "120px", height= "120px"><p>Чат-бот</p></th>
+  </tr>
+  <tr>
+    <th><button id = "btn1" type="button" name="run_script">От 5000</button></th>
+      <script src="https://telegram.org/js/telegram-web-app.js">
+        let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
+        tg.expand(); //расширяем на все окно
+        tg.MainButton.text = "Подтвердить"; //изменяем текст кнопки
+
+        let btn1 = document.getElementById("btn1"); //получаем кнопку активировать/деактивировать
+        btn1.addEventListener('click', function() { //вешаем событие на нажатие html-кнопки
+          if (tg.MainButton.isActive) { //если кнопка показана
+            tg.btn1.text = "Добавлено"; //изменяем текст кнопки
+            Telegram.WebApp.onEvent('mainButtonClicked', function () {
+              tg.sendData("");
+              //при клике на основную кнопку отправляем данные в строковом виде
+            });
+
+          }
+        })
+      </script>
+    <th><button id = "btn2" type="button" name="run_script">От 10000</button></th>
+    <script>
+        btn2.onclick = function() {
+        btn2.innerHTML = "Добавлено";
+        }
+      </script>
+    <th><button id = "btn3" type="button" name="run_script">От 15000</button></th>
+    <script>
+        btn3.onclick = function() {
+        btn3.innerHTML = "Добавлено";
+        }
+      </script>
+  </tr>
+  <tr>
+    <th><img src="C:\Users\Asus\SowtwareProducts\SoftwareProducts\мини-сайт.gif" width: "120px", height= "120px"><p>Бот мини-сайт</p></th>
+    <th><img src="C:\Users\Asus\SowtwareProducts\SoftwareProducts\база.gif" width: "120px", height= "120px"><p>База данных</p></th>
+    <th><img src="C:\Users\Asus\SowtwareProducts\SoftwareProducts\прога.gif" width: "120px", height= "120px"><p>Написание программ</p></th>
+  </tr>
+
+  <tr>
+    <th><button id = "btn4" type="button" name="run_script">От 25000</button></th>
+    <script>
+        btn4.onclick = function() {
+        btn4.innerHTML = "Добавлено";
+        }
+      </script>
+    <th><button id = "btn5" type="button" name="run_script">От 10000</button></th>
+    <script>
+        btn5.onclick = function() {
+          btn5.innerHTML = "Добавлено";
+        }
+      </script>
+    <th><button id = "btn6" type="button" name="run_script">От 10000</button></th>
+    <script>
+        btn6.onclick = function() {
+          btn6.innerHTML = "Добавлено";
+        }
+      </script>
+  </tr>
+
+  <tr>
+    <th colspan="3"><button id="btnED" type="button" name="run_script">Оставить заявку</button></th>
+    <script src="https://telegram.org/js/telegram-web-app.js">
+
+      let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
+      tg.expand(); //расширяем на все окно
+      tg.MainButton.text = "Подтвердить"; //изменяем текст кнопки
+
+      Telegram.WebApp.onEvent('mainButtonClicked', function(){
+        tg.sendData("");
+            //при клике на основную кнопку отправляем данные в строковом виде
+        });
+      </script>
+  </tr>
+  </table>
+<body>
+
+</body>
+</html>

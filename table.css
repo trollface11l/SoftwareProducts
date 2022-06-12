@@ -1,0 +1,58 @@
+body {
+  width: 600px;
+    position: absolute;
+  margin: 0;
+  background: #F4F1F8;
+}
+table {
+  border-collapse: collapse;
+  line-height: 1.1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background:  radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+  color: #0C213B;
+}
+caption {
+  font-family: annabelle, cursive;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 10px;
+  color: #4ad9bc;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+ }
+
+th {
+  padding: 10px;
+  border: 1px solid #A9E2CC;
+}
+td {
+  font-size: 0.8em;
+  padding: 5px 7px;
+  border: 1px solid #A9E2CC;
+}
+.first {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+.second :hover {
+    background: #237364;
+  }
+img {
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 5px 7px;
+  border: 1px solid #A9E2CC;
+}
+button[name="run_script"] {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 25px;
+    background: #4ad9bc;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+  }
+  button[name="run_script"]:hover {
+    background: #237364;
+  }
