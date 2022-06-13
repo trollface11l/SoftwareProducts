@@ -47,7 +47,7 @@
    tg.expand(); //расширяем на все окно
 
    tg.MainButton.text = "Оставить заявку"; //изменяем текст кнопки
-   tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
+   tg.MainButton.setText("Оставить заявку"); //изменяем текст кнопки иначе
    tg.MainButton.textColor = "#F4F1F8"; //изменяем цвет текста кнопки
    tg.MainButton.color = "#4ad9bc"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#0a7c65"}); //так изменяются все параметры
@@ -63,7 +63,7 @@
       }
    });
 
-   let btn1 = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
+   let btn1 = document.getElementById("btn1"); //получаем кнопку активировать/деактивировать
    btn1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.MainButton.isActive){ //если кнопка показана
          tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
