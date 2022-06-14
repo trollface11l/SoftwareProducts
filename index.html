@@ -52,8 +52,16 @@
    tg.MainButton.color = "#4ad9bc"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#0a7c65"}); //так изменяются все параметры
 
-   let btn2 = document.getElementById("btn2"); //получаем кнопку скрыть/показать
-
+   let btn1 = document.getElementById("btn2"); //получаем кнопку скрыть/показать
+    btn1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+          tg.btn1.setText("Добавлено");
+          if (tg.MainButton.isVisible){ //если кнопка показана
+             tg.MainButton.hide() //скрываем кнопку
+          }
+          else{ //иначе
+             tg.MainButton.show() //показываем
+          }
+       });
    btn2.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.MainButton.isVisible){ //если кнопка показана
          tg.MainButton.hide() //скрываем кнопку
@@ -63,17 +71,6 @@
       }
    });
 
-   let btn1 = document.getElementById("btn1"); //получаем кнопку активировать/деактивировать
-   btn1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-      if (tg.MainButton.isActive){ //если кнопка показана
-         tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
-         tg.MainButton.disable() //скрываем кнопку
-      }
-      else{ //иначе
-         tg.MainButton.setParams({"color": "#143F6B"}); //меняем цвет
-         tg.MainButton.enable() //показываем
-      }
-   });
 
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
       tg.sendData("some string that we need to send");
