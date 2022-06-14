@@ -22,23 +22,8 @@
   </tr>
   <tr>
     <th><button id = "btn1" type="button" name="run_script">От 5000</button></th>
-    <script>
-      const btn1 = document.querySelector('#btn1');
-      btn1.addEventListener('click', function() {
-      btn1.innerHTML = (btn1.innerHTML === 'От 5000') ? btn1.innerHTML = 'Добавлено' : btn1.innerHTML = 'От 5000';})
-    </script>
     <th><button id = "btn2" type="button" name="run_script">От 10000</button></th>
-    <script>
-      const btn2 = document.querySelector('#btn2');
-      btn2.addEventListener('click', function() {
-      btn2.innerHTML = (btn2.innerHTML === 'От 10000') ? btn2.innerHTML = 'Добавлено' : btn2.innerHTML = 'От 10000';})
-    </script>
     <th><button id = "btn3" type="button" name="run_script">От 15000</button></th>
-    <script>
-      const btn3 = document.querySelector('#btn3');
-      btn3.addEventListener('click', function() {
-      btn3.innerHTML = (btn3.innerHTML === 'От 15000') ? btn3.innerHTML = 'Добавлено' : btn3.innerHTML = 'От 15000';})
-    </script>
   </tr>
   <tr>
     <th><img src="мини-сайт.gif" width= "105px", height= "105px"><p>Бот мини-сайт</p></th>
@@ -48,23 +33,8 @@
 
   <tr>
     <th><button id = "btn4" type="button" name="run_script">От 25000</button></th>
-    <script>
-      const btn4 = document.querySelector('#btn4');
-      btn4.addEventListener('click', function() {
-      btn4.innerHTML = (btn4.innerHTML === 'От 25000') ? btn4.innerHTML = 'Добавлено' : btn4.innerHTML = 'От 25000';})
-    </script>
     <th><button id = "btn5" type="button" name="run_script">От 10000</button></th>
-    <script>
-      const btn5 = document.querySelector('#btn5');
-      btn5.addEventListener('click', function() {
-      btn5.innerHTML = (btn5.innerHTML === 'От 10000') ? btn5.innerHTML = 'Добавлено' : btn5.innerHTML = 'От 10000';})
-    </script>
     <th><button id = "btn6" type="button" name="run_script">От 10000</button></th>
-    <script>
-      const btn6 = document.querySelector('#btn6');
-      btn6.addEventListener('click', function() {
-      btn6.innerHTML = (btn6.innerHTML === 'От 10000') ? btn6.innerHTML = 'Добавлено' : btn6.innerHTML = 'От 10000';})
-    </script>
   </tr>
 
 
@@ -72,6 +42,31 @@
 </body>
 
 <script>
+  const btn1 = document.querySelector('#btn1');
+      btn1.addEventListener('click', function() {
+      btn1.innerHTML = (btn1.innerHTML === 'От 5000') ? btn1.innerHTML = 'Добавлено' : btn1.innerHTML = 'От 5000';})
+
+  const btn2 = document.querySelector('#btn2');
+      btn2.addEventListener('click', function() {
+      btn2.innerHTML = (btn2.innerHTML === 'От 10000') ? btn2.innerHTML = 'Добавлено' : btn2.innerHTML = 'От 10000';})
+
+  const btn3 = document.querySelector('#btn3');
+      btn3.addEventListener('click', function() {
+      btn3.innerHTML = (btn3.innerHTML === 'От 15000') ? btn3.innerHTML = 'Добавлено' : btn3.innerHTML = 'От 15000';})
+
+  const btn4 = document.querySelector('#btn4');
+      btn4.addEventListener('click', function() {
+      btn4.innerHTML = (btn4.innerHTML === 'От 25000') ? btn4.innerHTML = 'Добавлено' : btn4.innerHTML = 'От 25000';})
+
+  const btn5 = document.querySelector('#btn5');
+      btn5.addEventListener('click', function() {
+      btn5.innerHTML = (btn5.innerHTML === 'От 10000') ? btn5.innerHTML = 'Добавлено' : btn5.innerHTML = 'От 10000';})
+
+  const btn6 = document.querySelector('#btn6');
+      btn6.addEventListener('click', function() {
+      btn6.innerHTML = (btn6.innerHTML === 'От 10000') ? btn6.innerHTML = 'Добавлено' : btn6.innerHTML = 'От 10000';})
+
+
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
 
    tg.expand(); //расширяем на все окно
@@ -81,7 +76,7 @@
    tg.MainButton.textColor = "#F4F1F8"; //изменяем цвет текста кнопки
    tg.MainButton.color = "#4ad9bc"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#0a7c65"}); //так изменяются все параметры
-   
+
     btn1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
           if (tg.MainButton.isVisible){ //если кнопка показана
              tg.MainButton.hide() //скрываем кнопку
