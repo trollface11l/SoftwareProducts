@@ -61,11 +61,13 @@
              tg.MainButton.show() //показываем
           }
           Telegram.WebApp.onEvent('mainButtonClicked', function(){
-          tg.sendData("Заказе услуги Составление ТЗ");
+          tg.sendData("заказе услуги Составление ТЗ");
           //при клике на основную кнопку отправляем данные в строковом виде
    });
        });
-   btn2.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+
+
+    btn2.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.MainButton.isVisible){ //если кнопка показана
          tg.MainButton.hide() //скрываем кнопку
       }
@@ -73,32 +75,64 @@
          tg.MainButton.show() //показываем
       }
       Telegram.WebApp.onEvent('mainButtonClicked', function(){
-          tg.sendData("Заказе услуги Десктоп приложения");
+          tg.sendData("заказе услуги Десктоп приложения");
           //при клике на основную кнопку отправляем данные в строковом виде
    });
        });
 
 
+   btn3.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+          if (tg.MainButton.isVisible){ //если кнопка показана
+             tg.MainButton.hide() //скрываем кнопку
+          }
+          else{ //иначе
+             tg.MainButton.show() //показываем
+          }
+          Telegram.WebApp.onEvent('mainButtonClicked', function(){
+          tg.sendData("заказе услуги Написание программ");
+          //при клике на основную кнопку отправляем данные в строковом виде
+   });
+       });
 
 
+   btn4.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+          if (tg.MainButton.isVisible){ //если кнопка показана
+             tg.MainButton.hide() //скрываем кнопку
+          }
+          else{ //иначе
+             tg.MainButton.show() //показываем
+          }
+          Telegram.WebApp.onEvent('mainButtonClicked', function(){
+          tg.sendData("заказе услуги Бот мини-сайт");
+          //при клике на основную кнопку отправляем данные в строковом виде
+   });
+       });
 
-   let usercard = document.getElementById("usercard"); //получаем блок usercard
 
-   let profName = document.createElement('p'); //создаем параграф
-   profName.innerText = `${tg.initDataUnsafe.user.first_name}
-   ${tg.initDataUnsafe.user.last_name}
-   ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
-   //выдем имя, "фамилию", через тире username и код языка
-   usercard.appendChild(profName); //добавляем
+   btn5.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+          if (tg.MainButton.isVisible){ //если кнопка показана
+             tg.MainButton.hide() //скрываем кнопку
+          }
+          else{ //иначе
+             tg.MainButton.show() //показываем
+          }
+          Telegram.WebApp.onEvent('mainButtonClicked', function(){
+          tg.sendData("заказе услуги База данных");
+          //при клике на основную кнопку отправляем данные в строковом виде
+   });
+       });
 
-   let userid = document.createElement('p'); //создаем еще параграф
-   userid.innerText = `${tg.initDataUnsafe.user.id}`; //показываем user_id
-   usercard.appendChild(userid); //добавляем
-
-
-   //работает только в attachment menu
-   // let pic = document.createElement('img'); //создаем img
-   // pic.src = tg.initDataUnsafe.user.photo_url; //задаём src
-   // usercard.appendChild(pic); //добавляем элемент в карточку
+   btn6.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+          if (tg.MainButton.isVisible){ //если кнопка показана
+             tg.MainButton.hide() //скрываем кнопку
+          }
+          else{ //иначе
+             tg.MainButton.show() //показываем
+          }
+          Telegram.WebApp.onEvent('mainButtonClicked', function(){
+          tg.sendData("заказе услуги Чат-бот");
+          //при клике на основную кнопку отправляем данные в строковом виде
+   });
+       });
 </script>
 </html>
