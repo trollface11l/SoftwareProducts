@@ -61,7 +61,7 @@
              tg.MainButton.show() //показываем
           }
           Telegram.WebApp.onEvent('mainButtonClicked', function(){
-          tg.sendData("some string that we need to send");
+          tg.sendData("Заказ услуги Составление ТЗ");
           //при клике на основную кнопку отправляем данные в строковом виде
    });
        });
@@ -72,7 +72,11 @@
       else{ //иначе
          tg.MainButton.show() //показываем
       }
+      Telegram.WebApp.onEvent('mainButtonClicked', function(){
+          tg.sendData("Заказ услуги Десктоп приложение");
+          //при клике на основную кнопку отправляем данные в строковом виде
    });
+       });
 
 
 
