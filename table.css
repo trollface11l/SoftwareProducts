@@ -1,10 +1,15 @@
 body {
-  width: 600px;
+    max-width: 10%;
+
+    width: 400px;
+    height: 658px;
     position: absolute;
-  margin: 0;
-  background: #F4F1F8;
+    margin: 0;
+    background: #F4F1F8;
 }
 table {
+    width: 400px;
+    height: 658px;
   border-collapse: collapse;
   line-height: 1.1;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -15,13 +20,13 @@ caption {
   font-family: annabelle, cursive;
   font-weight: bold;
   font-size: 2em;
-  padding: 10px;
+  padding: 5px;
   color: #4ad9bc;
   text-shadow: 1px 1px 0 rgba(0,0,0,.3);
  }
 
 th {
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #A9E2CC;
 }
 td {
