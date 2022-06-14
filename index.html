@@ -42,9 +42,7 @@
 </body>
 
 <script>
-  const btn1 = document.querySelector('#btn1');
-      btn1.addEventListener('click', function() {
-      btn1.innerHTML = (btn1.innerHTML === 'От 5000') ? btn1.innerHTML = 'Добавлено' : btn1.innerHTML = 'От 5000';})
+
 
   const btn2 = document.querySelector('#btn2');
       btn2.addEventListener('click', function() {
@@ -84,6 +82,9 @@
           else{ //иначе
              tg.MainButton.show() //показываем
           }
+          const btn1 = document.querySelector('#btn1');
+          btn1.addEventListener('click', function() {
+          btn1.innerHTML = (btn1.innerHTML === 'От 5000') ? btn1.innerHTML = 'Добавлено' : btn1.innerHTML = 'От 5000';})
        });
    btn2.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.MainButton.isVisible){ //если кнопка показана
