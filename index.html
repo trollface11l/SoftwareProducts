@@ -54,12 +54,12 @@
 
    let btn1 = document.getElementById("btn2"); //получаем кнопку скрыть/показать
     btn1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-          tg.btn1.setText("Добавлено");
           if (tg.MainButton.isVisible){ //если кнопка показана
              tg.MainButton.hide() //скрываем кнопку
           }
           else{ //иначе
              tg.MainButton.show() //показываем
+             tg.btn1.setText("Добавлено");
           }
        });
    btn2.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
