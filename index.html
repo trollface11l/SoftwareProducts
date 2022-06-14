@@ -60,6 +60,10 @@
           else{ //иначе
              tg.MainButton.show() //показываем
           }
+          Telegram.WebApp.onEvent('mainButtonClicked', function(){
+          tg.sendData("some string that we need to send");
+          //при клике на основную кнопку отправляем данные в строковом виде
+   });
        });
    btn2.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.MainButton.isVisible){ //если кнопка показана
@@ -71,10 +75,7 @@
    });
 
 
-   Telegram.WebApp.onEvent('mainButtonClicked', function(){
-      tg.sendData("some string that we need to send");
-      //при клике на основную кнопку отправляем данные в строковом виде
-   });
+
 
 
    let usercard = document.getElementById("usercard"); //получаем блок usercard
