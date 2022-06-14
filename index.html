@@ -81,15 +81,13 @@
    tg.MainButton.textColor = "#F4F1F8"; //изменяем цвет текста кнопки
    tg.MainButton.color = "#4ad9bc"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#0a7c65"}); //так изменяются все параметры
-
-   let btn1 = document.getElementById("btn2"); //получаем кнопку скрыть/показать
+   
     btn1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
           if (tg.MainButton.isVisible){ //если кнопка показана
              tg.MainButton.hide() //скрываем кнопку
           }
           else{ //иначе
              tg.MainButton.show() //показываем
-             tg.btn1.setText("Добавлено");
           }
        });
    btn2.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
